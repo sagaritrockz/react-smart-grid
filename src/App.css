@@ -1,0 +1,17 @@
+#smart-grid .App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#smart-grid .table {
+  margin: 1%;
+  width: 98%;
+}
+
+#smart-grid .table-label {
+  margin: 1%;
+  width: 98%;
+}
