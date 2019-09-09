@@ -2,28 +2,25 @@ import React, { Component, Fragment } from "react";
 
 export default class Table extends Component {
   render() {
+    const { headers, records } = this.props;
     return (
       <Fragment>
-        <table className="table table-bordered">
+        <table className="table table-bordered table-fixed">
           <thead>
             <tr>
-              <th>Column 1</th>
-              <th>Column 2</th>
-              <th>Column 1</th>
-              <th>Column 2</th>
-              <th>Column 1</th>
-              <th>Column 2</th>
+              {headers.map((header, idx) => (
+                <th key={idx}>{header}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>data 1</td>
-              <td>data 2</td>
-              <td>data 1</td>
-              <td>data 2</td>
-              <td>data 1</td>
-              <td>data 2</td>
-            </tr>
+            {records.map((record, idx) => (
+              <tr key={idx}>
+                {record.map((rec, idy) => (
+                  <td key={idy}>{rec}</td>
+                ))}
+              </tr>
+            ))}
           </tbody>
         </table>
       </Fragment>

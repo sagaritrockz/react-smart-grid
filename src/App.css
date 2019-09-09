@@ -1,3 +1,36 @@
+#smart-grid table,
+#smart-grid thead,
+#smart-grid tr,
+#smart-grid tbody,
+#smart-grid th,
+#smart-grid td {
+  text-align: center;
+}
+
+#smart-grid .table-fixed tbody {
+  height: 65vh;
+  overflow-y: auto;
+  width: 100%;
+}
+#smart-grid .table-fixed thead,
+#smart-grid .table-fixed tbody,
+#smart-grid .table-fixed tr,
+#smart-grid .table-fixed td,
+#smart-grid .table-fixed th {
+  display: block;
+}
+#smart-grid .table-fixed tr:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+#smart-grid .table-fixed tbody td,
+#smart-grid .table-fixed thead > tr > th {
+  float: left;
+  min-width: 200px;
+}
+
 #smart-grid .App-header {
   background-color: #282c34;
   display: flex;
